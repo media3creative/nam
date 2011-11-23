@@ -1,0 +1,154 @@
+@import compass/utilities
+@import compass/layout
+@import compass/css3
+
+@import partials/classes
+@import partials/variables
+@import partials/typography
+@import partials/color
+@import partials/corners
+
+
+.body
+	@extend .box
+	@extend .clearfix
+	position: relative
+	width: 100%
+	margin: 0 auto
+	background: #000
+	.center
+		@extend .center-container
+		@extend .clearfix
+		padding: 0 0 100px 0
+		.content
+			@extent .box
+			width: $inside-width
+			margin: 0 auto
+			padding: 0
+
+
+.section
+	@extend .box
+	@extend .clearfix
+	position: relative
+	width: $inside-width
+	padding: $v-gap 0 ($v-gap) 0
+	//border-bottom: 1px dotted $section-border
+	h1
+		font-family: "Embed-Helvetica"
+		@extend .box
+		margin: 0 0 ($v-gap/3) 0
+		padding: 0
+		line-height: 1.5em
+		word-spacing: .1em
+		letter-spacing: 0.05em
+	h4
+		font-family: "Embed-Helvetica"
+		@extend .box
+		margin: 0 0 0 0
+		padding: 0
+		line-height: 1.2em
+	p
+		@extend .font-helvetica
+		@extend .box
+		margin: ($v-gap/3) 0
+		padding: 0 0 0 $corner-radius
+		line-height: 1.1em
+		a
+			text-decoration: none
+		&:last-child
+			margin-bottom: 0
+	&:first-child
+		background: url(/images/bg-line.jpg) bottom center no-repeat
+	&:last-child
+		padding-bottom: 0
+		border-bottom: none
+	.left, .right
+		@extend .box
+		@extend .clearfix
+		position: relative
+		width: $sidebar-width
+	.left
+		+float-left
+	.right
+		+float-right
+		
+.image-container
+	@extend .box
+	width: 380px
+	height: 270px
+	overflow: hidden
+	margin: 0 0 ($v-gap) 0
+	padding: 10px
+	background: #000
+	border: 1px solid $brown
+	img
+		width: 360px
+		height: 250px
+		overflow: hidden
+
+.top
+	h1
+		margin: ($v-gap/2) 0 0 0
+		font-size: 24px
+		color: #ddd
+	h4
+		font-size: 19px
+		color: $green
+	p
+		font-size: 15px
+		font-weight: 200
+		color: #ddd
+		letter-spacing: 0.05em
+	a
+		color: #ddd
+		border-bottom: 1px dotted $gray-lt
+		&:hover
+			color: $gray-lt
+			border-bottom: 1px solid transparent
+			
+
+.bottom
+	h1
+		color: $gray-lt
+		font-size: 19px
+		font-weight: bold
+	h4
+		margin: 0 0 (($v-gap/3)*-1)
+		color: $brown
+		font-size: 15px
+		font-weight: bolder
+		line-height: 1em
+	p
+		padding: 0 30px 0 0
+		color: $gray-lt
+		font-size: 15px
+		font-weight: 200
+		text-align: justify
+		a
+			color: $gray-md
+			text-decoration: none
+			border-bottom: 1px dotted $gray-md
+			&:hover
+				color: $green
+				border-bottom: 1px solid transparent
+	.left
+		border-right: 1px solid $gray-dk
+
+
+
+// Needed to add dotted line between page sections
+.spacer
+	@extend .clearfix
+	width: 100%
+	margin-bottom: ($v-gap)
+
+
+
+// Re-formats section h1 when no image is used
+p.page-top
+	text-align: right !important
+	padding-right: ($h-gap /2) !important
+
+p.hide
+	font-size: 11px !important

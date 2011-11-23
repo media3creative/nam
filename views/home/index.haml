@@ -2,7 +2,7 @@
 - @subtitle = ""
 - @body_class = "one"
 
-%link{:href => "stylesheets/body-1.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+%link{:href => "stylesheets/body-4.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
 #one.image-slider
   .center
@@ -13,55 +13,43 @@
         %img{:alt => "", :src => "/images/nivo/banner-1-3.jpg", :title => "#caption3"}/
       #caption1.nivo-html-caption
         .captionContainer
-          %h1 Anna Knows
-          %h3 Dedicated to connecting the consumer and business owner
+          %h1 Over 20 years experience
+          %h3 in the hydro blast cleaning of ship holds. We have successfully prepared numerous ships for inspection by the USDA and national cargo bureau.
+        .shadowContainer
       #caption2.nivo-html-caption
         .captionContainer
-          %h1 We're your Biggest Fan
-          %h3 We are dedicated to giving you the exposure needed to grow a successful business
+          %h1 No pass, no pay
+          %h3 We offer hourly or lump sum rates on a "no pass, no pay" basis, giving you the flexibility and security you need.
+        .shadowContainer
       #caption3.nivo-html-caption
         .captionContainer
-          %h1 Affordable and Effective
-          %h3 We advertise your business through business listings, buttons, banners, vendor and business events.
+          %h1 High-powered hydroblasting
+          %h3 Our staff of highly qualified personnel use high pressure units for complete vessel cleaning. 
+        .shadowContainer
 
 .body
   .center
     .content
-      #one.left
-        %a.container{:href => "/businesses"}
-          %h1
-            Business Listings
-          %h3 We provide valuable insight and expertise in marketing &amp; promoting using online tools
-          %p.link Discover  >
-      #one.middle
-        %a.container{:href => "/services"}
-          %h1 Affordable Service
-          %h3 We offer promotion and marketing for the small business on a small budget!
-          %p.link Learn More  >
-      #one.right
-        %a.container
-          %h1 Stay in-the-know
-          / %p.link Coming Soon
-          %link{:href => "http://cdn-images.mailchimp.com/embedcode/slim-081711.css", :rel => "stylesheet", :type => "text/css"}
-          %form.mailchimp{:action => "http://annaknows.us2.list-manage.com/subscribe/post", :method => "POST"}
-            %input{:name => "u", :type => "hidden", :value => "4bb416bf0b00021eb6b111e89"}/
-            %input{:name => "id", :type => "hidden", :value => "61d6de444a"}/
-            #mergeTable.mergeTable
-              #mergeRow-0.mergeRow.dojoDndItem.mergeRow-email
-                %label{:for => "MERGE0"}
-                  Email Address
-                  %span.asterisk *
-                .field-group
-                  %input#MERGE0{:autocapitalize => "off", :autocorrect => "off", :name => "MERGE0", :size => "30", :type => "email", :value => ""}/
-              .clearfix
-              #mergeRow-1.mergeRow.dojoDndItem.mergeRow-text
-                %label{:for => "MERGE1"} First Name
-                .field-group
-                  %input#MERGE1{:name => "MERGE1", :size => "10", :type => "text", :value => ""}/
-              #mergeRow-2.mergeRow.dojoDndItem.mergeRow-text
-                %label{:for => "MERGE2"} Last Name
-                .field-group
-                  %input#MERGE2{:name => "MERGE2", :size => "10", :type => "text", :value => ""}/
-            .clearfix
-            .submit_container
-              %input.button{:name => "submit", :type => "submit", :value => "Subscribe to AnnaKnows"}/
+      .section.top
+        .left
+          %h1 North American Marine
+          %h4 Ship Repair &amp; Industrial Cleaning
+          %p We specialize in 24 Hour Service, Diesel Engine Spare Parts &amp; Service, Turbine &amp; Diesel Repair, General Ship Repair, Field Machining, and Marine &amp; Industrial Cleaning
+          %p
+            Discover more about our Repair and Cleaning
+            %a{:href => "/services"} Services >
+          .spacer
+        .right
+          .image-container
+            %img{:src => "/images/home1.jpg"}
+      .section.bottom
+        .left
+          %h1 Fabrication &amp; Machine Work
+          %p We have a wide range of parts that are fabricated or machined in-house by our skilled metal workers. New and reconditioned spare parts are also available.
+          %p
+            %a{:href => "/parts"} View Our Parts >
+        .right
+          %h1 Gangways &amp; Ladders
+          %p In addition to our ship repair and part replacement services, we manufacture and sell customized Steel Beam and Truss type Gangways as well as Accommodation Ladders.
+          %p
+            %a{:href => "/gangways"} View Details >

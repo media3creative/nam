@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, #header, #header .center {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -52,11 +52,11 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  background: #1e1c1c;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  background: #1e1c1c;
 }
 
 .corner-top-left {
@@ -163,11 +163,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .center-container, #header .center {
   position: relative;
-  width: 960px;
+  width: 1200px;
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
 .box, .center-container, #header .center, #header, #header .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
@@ -178,8 +178,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .opaque, #header .center #logo1 a:hover {
-  opacity: 0.92 !important;
-  filter: alpha(opacity=92) !important;
+  opacity: 0.42 !important;
+  filter: alpha(opacity=42) !important;
 }
 
 .contact-form {
@@ -221,7 +221,7 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, #header, #header .center {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#8ccaee), to(#5ea6db));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -255,11 +255,11 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  background: #1e1c1c;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  background: #1e1c1c;
 }
 
 .corner-top-left {
@@ -349,15 +349,18 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 #header {
   width: 100%;
-  height: 80px;
+  height: 60px;
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #499ad6;
+  background: url(/images/bg-header.png) repeat-x;
+}
+#header .center {
+  background: transparent;
 }
 #header .center #logo1 {
   position: absolute;
-  top: 15px;
-  left: 35px;
+  top: 7.5px;
+  left: 100px;
   margin: 0;
 }
 #header .center #logo1 a {
@@ -366,8 +369,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
 }
 #header .center #logo1 a img {
-  width: 200px;
-  height: 50px;
+  width: 314px;
+  height: 45px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -375,12 +378,12 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 ul#topnav {
-  font-family: "EmbedFont-1";
+  font-family: "Embed-Helvetica";
   display: inline;
   float: right;
-  margin: 20px 1px 0 235px;
+  margin: 25px 0 0 0;
   padding: 0;
-  color: #499ad6;
+  color: #525252;
   font-size: 11px;
   letter-spacing: 0.05em;
   list-style: none;
@@ -407,13 +410,10 @@ ul#topnav a.topnav {
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;
-  border-left: 1px solid #5ea6db;
-  border-right: 1px solid #5ea6db;
 }
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover {
   color: white;
-  background: #5ea6db;
 }
 
 ul#topnav li .sub {
@@ -479,5 +479,5 @@ ul#topnav .sub ul li h2 {
 }
 
 .navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
-  color: white;
+  color: #c5de9d;
 }

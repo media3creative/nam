@@ -1,124 +1,92 @@
 - @title = " | Services"
 - @subtitle = ""
-- @body_class = "three"
+- @body_class = "two"
 
-%link{:href => "stylesheets/body-3.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+%link{:href => "stylesheets/body-4.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
-#two.banner
+#one.image-slider
+  .center
+    #slider-wrapper
+      #slider.nivoSlider
+        %img{:alt => "", :src => "/images/nivo/banner-1-1.jpg", :title => "#caption1"}/
+        %img{:alt => "", :src => "/images/nivo/banner-1-2.jpg", :title => "#caption2"}/
+        %img{:alt => "", :src => "/images/nivo/banner-1-3.jpg", :title => "#caption3"}/
+      #caption1.nivo-html-caption
+        .captionContainer
+          %h1 Over 20 years experience
+          %h3 in the hydro blast cleaning of ship holds. We have successfully prepared numerous ships for inspection by the USDA and national cargo bureau.
+        .shadowContainer
+      #caption2.nivo-html-caption
+        .captionContainer
+          %h1 No pass, no pay
+          %h3 We offer hourly or lump sum rates on a "no pass, no pay" basis, giving you the flexibility and security you need.
+        .shadowContainer
+      #caption3.nivo-html-caption
+        .captionContainer
+          %h1 High-powered hydroblasting
+          %h3 Our staff of highly qualified personnel use high pressure units for complete vessel cleaning. 
+        .shadowContainer
+
+.body
   .center
     .content
-      %img.banner{:alt => "", :src => "/images/banner-services.jpg"}
+      .section.top
+        .left
+          %h1 Our Services
+          %h4 Ship Repair &amp; Industrial Cleaning
+          %p Our highly qualified personnel will get your vessel in working order and looking as good as new. Our state of the art hydroblast units, water pumps, man lifts, and air compressors allow us to service your ship quickly and efficiently.
+          .spacer
+        .right
+          .image-container
+            %img{:src => "/images/services1.jpg"}
+      .section.bottom
+        .left
+          %h1 Cleaning
+          %p We at North American Marine have over 20 years of experience in the hydroblast cleaning of ship holds. We have successfully prepared numerous ships for inspection by the USDA and National Cargo Bureau. 
 
-.listings
-  .center
-    .content
-      .main
-        .content
-          %a{:name => "anchor1"}
-          .section.no-image
-            %h1 Our Services
-            %p
-              Promoting and advertising businesses to thousands of online connections at an affordable cost.
-              %br
-              Compare each of our exposure packages below.
-      .left
-        %a.container{:href => "#"}
-          %h1 Business Listing
-          %h3
-            Business Listing*
-            %br
-            1 Category
-            %br
-            1x Social Media Post
-            %br
-            Special offers for AnnaKnows events
-            %br
-            %br
-            $25/month
-            %form.paypal{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post"}
-              %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-              %input{:name => "hosted_button_id", :type => "hidden", :value => "TDPLSN926999C"}/
-              %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_SM.gif", :type => "image"}/
-              %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}/
-            %br
-            %br
-            $250/year
-            %form.paypal{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post"}
-              %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-              %input{:name => "hosted_button_id", :type => "hidden", :value => "CXRPP9UQHBTVL"}/
-              %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif", :type => "image"}/
-              %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}/
+          %p Our service range is anywhere in the US Gulf and we can be on site within hours of notification. We offer hourly and lump sum hold preparation rates on a "no pass, no pay" basis.
 
-
-      .middle
-        %a.container{:href => "#"}
-          %h1 Gold
-          %h3 
-            Business Listing*
+          %h4 Hydroblasting
+          %p Our hydroblasting equipment includes 12 hydroblast units capable of producing between 3,000 and 25,000 PSI&mdash;each equipped with 6 cleaning guns capable of removing all types of residue from the vessels' tank tops, bulkheads, and hatch covers.
+          
+          %h4 Other Services
+          %p
+            &mdash; Tank Cleaning (hydroblast &amp; chemical)
             %br
-            Social Media Links
+            &mdash; Dry Cargo (general &amp; bulk)
             %br
-            Monthly Promotion
+            &mdash; Disposal (water &amp; slop)
             %br
-            Limited Event Posting
+            &mdash; Port to Port Cleaning
             %br
-            Special offers for AnnaKnows events
+            &mdash; Sand Blasting &amp; Painting
             %br
+            &mdash; Gas Freeing
             %br
-            $75/month
-            %form.paypal{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post"}
-              %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-              %input{:name => "hosted_button_id", :type => "hidden", :value => "ZLK4MRRUNRTHW"}/
-              %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_SM.gif", :type => "image"}/
-              %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}/
+            &mdash; USDA / NCB Inspections
+        .right
+          %h1 Repairs
+          %p
+            &mdash; Maintenance (Medium &amp; Low Speed)
             %br
-            %br  
-            $800/year
-            %form.paypal{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post"}
-              %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-              %input{:name => "hosted_button_id", :type => "hidden", :value => "KFQRUQRUMR6JU"}/
-              %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif", :type => "image"}/
-              %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}/
-
-
-      .right
-        %a.container{:href => "#"}
-          %h1 Platinum
-          %h3 
-            Business Listing*
+            &mdash; Major Repair &amp; Overhaul
             %br
-            Social Media Links
+            &mdash; Voyage Repair
             %br
-            Weekly Promotion
+            &mdash; Diesel
             %br
-            Unlimited Event Posting
+            &mdash; Turbines
             %br
-            Top Referrals
+            &mdash; Boiler
             %br
-            Special offers for AnnaKnows events
+            &mdash; Injectors
             %br
-            Exclusive Monthly Gathering
+            &mdash; Pumps
             %br
+            &mdash; Electrical
             %br
-            $125/month
-            %form.paypal{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post"}
-              %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-              %input{:name => "hosted_button_id", :type => "hidden", :value => "7PEGD6LZQBW3W"}/
-              %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_SM.gif", :type => "image"}/
-              %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}/
+            &mdash; Refrigeration
             %br
+            &mdash; Machine
             %br
-            $1300/year
-            %form.paypal{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post"}
-              %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-              %input{:name => "hosted_button_id", :type => "hidden", :value => "G4STUDLVB63U4"}/
-              %input{:alt => "PayPal - The safer, easier way to pay online!", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif", :type => "image"}/
-              %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :width => "1"}/
-
-      .main
-        .content
-          .section.no-image
-            %p
-              %sup *Includes: Company Name, Contact Name, Email Address, Image, Description, Website Link, and special offer for AnnaKnows visitors. Descriptions vary by exposure package&mdash;Business Listing: 150 characters, Exposure: 250 characters, Mega Exposure: 500 characters.
-
-
+            &mdash; Welding

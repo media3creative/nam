@@ -9,54 +9,55 @@
 @import partials/corners
 
 #footer
+	@extend .box
+	@extend .clearfix
+	position: relative
+	width: 100%
+	margin: 0 auto
+	background: transparent
 	.center
 		@extend .center-container
 		@extend .box
 		@extend .clearfix
-		font-family: "EmbedFont-1"
+		@extend .font-helvetica
 		margin: 0 auto
 		padding: ($v-gap / 2) 0 $v-gap
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
-		border-bottom: 1px solid $secondary-dark
 		.content
 			@extent .box
-			@extend .bg-gradient-gray-light
-			@extend .corner-all
 			@extend .clearfix
-			width: $inside-width
+			width: $center-width
 			margin: 0 auto
 			padding: 0
-			height: 150px
+			height: 50px
 			.row
 				@extend .box
 				position: relative
-				width: $inside-width
-				margin: 3px auto
+				width: $center-width
+				margin: 1px auto 0
 				padding: 0
 				background: transparent
-				text-align: center
+				text-align: left
 				&:last-child
 					border-right: none
 				p
-					font-family: "EmbedFont-1"
+					@extend .font-helvetica
 					position: relative
-					margin: 0 0 .5em 0
+					margin: 0 0 0 ($h-gap)
 					color: $footer-text
-					font-size: 10px
+					font-size: 10.5px
 					font-weight: 200
 					word-spacing: .1em
 					letter-spacing: .05em
 				a
-					font-family: "EmbedFont-1"
+					@extend .font-helvetica
 					display: inline
 					margin: 0 0 .3em 0
 					color: $footer-link
-					font-size: 11px
+					font-size: 10.5px
 					font-weight: 200
 					text-decoration: none
 					&:hover
-						color: $footer-link-hover
+						color: $green
 					img.icon
 						width: 15px
 						height: 15px

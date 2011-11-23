@@ -52,11 +52,11 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  background: #1e1c1c;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  background: #1e1c1c;
 }
 
 .corner-top-left {
@@ -163,11 +163,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .center-container, .banner .center, .listings .center {
   position: relative;
-  width: 960px;
+  width: 1200px;
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
 .box, .center-container, .banner .center, .listings .center, .banner, .banner .center .content img.banner, .listings, .listing-setup, .listings .center .content .left a.container, .listings .center .content .middle a.container, .listings .center .content .right a.container, .listing-setup h1, .listings .center .content .left a.container h1, .listings .center .content .middle a.container h1, .listings .center .content .right a.container h1, .listing-setup h3, .listings .center .content .left a.container h3, .listings .center .content .middle a.container h3, .listings .center .content .right a.container h3, .listing-setup p.link, .listings .center .content .left a.container p.link, .listings .center .content .middle a.container p.link, .listings .center .content .right a.container p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h4, .main .content .main h4, .main .content .section p, .main .content .main p {
@@ -178,8 +178,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .opaque {
-  opacity: 0.92 !important;
-  filter: alpha(opacity=92) !important;
+  opacity: 0.42 !important;
+  filter: alpha(opacity=42) !important;
 }
 
 .contact-form {
@@ -255,11 +255,11 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #c5daf1;
+  background: #1e1c1c;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #c5daf1;
+  background: #1e1c1c;
 }
 
 .corner-top-left {
@@ -478,7 +478,7 @@ form.paypal {
   z-index: 100;
 }
 .main .content .section h1, .main .content .main h1 {
-  width: 475px;
+  width: 320px;
   margin: 0px 0 10px 115px;
   padding: 0 3em 0.5em 0px;
   color: #8ccaee !important;

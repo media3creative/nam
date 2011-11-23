@@ -13,55 +13,56 @@
 	position: relative
 	width: 100%
 	margin: 0 auto
-	//background: $image-slider-bg
+	background: $gray-md
+	border-bottom: 10px solid $gray-dk
 	.center
 		@extend .center-container
-		padding: $v-gap 0 ($v-gap/2)
-		border-left: 1px solid $secondary-dark
-		border-right: 1px solid $secondary-dark
+		padding: 0
+		background: transparent !important
+		.shadowContainer
+			@extend .box
+			position: absolute
+			width: $center-width
+			height: 70px
+			bottom: 0px
+			left: 0
+			margin: 0
+			background: url(/images/bg-trans.png) repeat
 		.captionContainer
 			@extend .box
 			position: absolute
-			width: $inside-width
-			//height: 80px
-			top: 200px
-			left: 0
+			width: 500px
+			//height: 70px
+			top: 75px
+			left: 100px
 			margin: 0
 			padding: 5px
-			background: $secondary
+			background: transparent
 			h1
 				@extend .box
-				@extend .font-Helvetica
-				margin: 5px 15px
+				font-family: "Embed-Helvetica"
+				margin: 0px
 				padding: 0
-				color: $image-slider-title
+				color: $gray-md
 				//opacity: 0.85
-				font-size: 30px
-				font-weight: bolder
+				font-size: 39px
+				font-weight: 100
 				text-align: left
 				line-height: 1em
 				word-spacing: .1em
-				letter-spacing: -0.05em
+				letter-spacing: 0
 			h3
-				@extend .font-base
-				//@extend .corner-right
+				@extend .font-Helvetica
 				@extend .box
 				position: relative
 				top: 0px
-				margin: 0 15px 10px
+				margin: 5px 50px 10px 0
 				padding: 0
-				color: $gray-light
-				//background: $secondary
-				//opacity: 0.85
-				font-size: 14px
+				color: $gray-lt
+				font-size: 15px
 				font-weight: 200
 				text-align: left
 				line-height: 1.1em
-				//word-spacing: .05em
-				//letter-spacing: .025em
-				//border: 1px solid #000
-				&:hover
-					//opacity: 0.75
 			p.link
 				@extend .bg-gradient-primary
 				@extend .box
@@ -91,7 +92,7 @@
 	@extend .box
 	@extend .corner-all
 	position: relative
-	width: $inside-width
+	width: $center-width
 	height: $slider-height
 
 .nivoSlider img 
@@ -100,7 +101,7 @@
 	position: absolute
 	top: 0px
 	left: 0px
-	width: $inside-width
+	width: $center-width
 	height: $slider-height
 
 // If an image is wrapped in a link //
@@ -189,18 +190,16 @@ a.nivo-nextNav
 	@extend .corner-all
 	@extend .font-helvetica
 	position: relative
-	width: $inside-width
+	width: $center-width
 	height: $slider-height
 	margin: 0 auto
 	overflow: hidden
-	border: 1px solid $image-slider-border	
-	background: $image-slider-bg
 
 #slider
 	@extend .box
 	@extend .corner-all
 	position: relative
-	width: $inside-width
+	width: $center-width
 	height: $slider-height
 
 #slider img 

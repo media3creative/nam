@@ -1,46 +1,13 @@
-- @sitename = "Anna Knows"
+- @sitename = "North American Marine"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["About", "/about"]
-- @link3 = ["Services", "/services"]
-- @link4 = ["Events", "/events"]
-- @link5 = ["Contact", "/contact"]
-- @link6 = ["Businesses", "/businesses"]
+- @link2 = ["Services", "/services"]
+- @link3 = ["Parts", "/parts"]
+- @link4 = ["Texas Marine Co.", "#"]
+- @link5 = ["Gangways", "/gangways"]
+- @link6 = ["Contact", "/contact"]
 
-// SUB NAVIGATION
-- @link6A = ["Apparel / Accessories", "appacc"]
-- @link6B = ["Books", "books"]
-- @link6C = ["Business Services", "businesses"]
-- @link6D = ["Energy", "energy"]
-- @link6E = ["Event Planning", "events"]
-- @link6F = ["Food / Desserts", "food"]
-- @link6G = ["Gifts", "gifts"]
-- @link6H = ["Health &amp; Beauty", "healthbeauty"]
-- @link6I = ["Home Decor", "homedecor"]
-- @link6J = ["Home Parties", "homeparties"]
-- @link6K = ["Insurance", "insurance"]
-- @link6L = ["Jewelry", "jewelry"]
-- @link6M = ["Lawn & Garden", "lawngarden"]
-- @link6N = ["Legal Services", "legal"]
-- @link6O = ["Personal Services", "personal"]
-- @link6P = ["Photography", "photo"]
-- @link6Q = ["Real Estate", "realestate"]
-- @link6R = ["Travel", "travel"]
-
-
-// FOOTER LINKS
-- @linkA1 = ["Anna Jennings", "ssss"]
-- @linkA2 = ["(713) 398-8474", "ssss"]
-- @linkA3 = ["anna@annaknows.com", "mailto:anna@annaknows.com"]
-- @linkA4 = ["Terms of Service", "/terms"]
-- @linkA5 = ["link name", "/path"]
-
-- @linkB1 = ["Facebook", "http://www.facebook.com/annaknowsfanpage"]
-- @linkB2 = ["Twitter", "http://twitter.com/annaknowscom"]
-- @linkB3 = ["LinkedIn", "http://www.linkedin.com/in/annaknows"]
-- @linkB4 = ["link name", "/path"]
-- @linkB5 = ["link name", "/path"]
 
 
 
@@ -220,14 +187,14 @@
             %a#three.topnav{:href => @link3[1]}
               =@link3[0]
           %li
-            %a#six.topnav{:href => @link6[1]}
-              =@link6[0]
-          %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
+          %li
+            %a#six.topnav{:href => @link6[1]}
+              =@link6[0]
 
 
     .content
@@ -235,34 +202,33 @@
     #footer
       .center
         .content
-          &nbsp;
-          .row
-            %p.logo-sm
-              %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
-              %br
-              Anna Knows | Dedicated to connecting the consumer and business owner
           .row
             %p
-              =@linkA1[0]
-              =" | "
-              =@linkA2[0]
-              =" | "
-              %a{:href => @linkA3[1]}
-                =@linkA3[0]
-              =" | "
-              %a{:href => @linkA4[1]}
-                =@linkA4[0]
+              %a{:href => "http://maps.google.com/maps?q=5602+Plainview+Houston,+TX+77087&hl=en&sll=37.0625,-95.677068&sspn=76.117013,76.728516&vpsrc=0&hnear=5602+Plainview+St,+Houston,+Texas+77087&t=m&z=17", :target => "_blank"} 5602 Plainview Houston, TX 77087
+              = " | " 
+              713.649.2666
+              = " | " 
+              %a{:href => "mailto:info@northamericanmarineinc.com"} info@northamericanmarineinc.com 
           .row
             %p
-              %a{:href => @linkB1[1], :target => "_blank"} 
-                %img.icon{:src => "/images/facebook-color.png"}
-                =@linkB1[0]              
-              %a{:href => @linkB2[1], :target => "_blank"} 
-                %img.icon{:src => "/images/twitter-color.png"}
-                =@linkB2[0]
-              %a{:href => @linkB3[1], :target => "_blank"} 
-                %img.icon{:src => "/images/linkedin-color.png"}
-                =@linkB3[0]
+              %a{:href => @link1[1]}
+                =@link1[0]
+              = " | " 
+              %a{:href => @link2[1]}
+                =@link2[0]
+              = " | " 
+              %a{:href => @link3[1]}
+                =@link3[0]
+              = " | " 
+              %a{:href => @link4[1]}
+                =@link4[0]
+              = " | " 
+              %a{:href => @link5[1]}
+                =@link5[0]
+              = " | " 
+              %a{:href => @link6[1]}
+                =@link6[0]
+              
               
                   
     .omg-bar
@@ -272,5 +238,4 @@
       .powered-by
         :markdown
           Powered by [Ovalle Media Group](http://ovallemg.com/)
-          
           
