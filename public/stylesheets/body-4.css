@@ -445,15 +445,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .top a {
   color: #dddddd;
-  border-bottom: 1px dotted #525252;
+  border-bottom: 1px dotted #7c7c7c;
 }
 .top a:hover {
-  color: #525252;
+  color: #7c7c7c;
   border-bottom: 1px solid transparent;
 }
 
 .bottom h1 {
-  color: #525252;
+  color: #7c7c7c;
   font-size: 19px;
   font-weight: bold;
 }
@@ -466,13 +466,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .bottom p {
   padding: 0 30px 0 0;
-  color: #525252;
+  color: #7c7c7c;
   font-size: 15px;
   font-weight: 200;
   text-align: justify;
 }
 .bottom p a {
-  color: #333333;
+  color: #5c5c5c;
   text-decoration: none;
   border-bottom: 1px dotted #333333;
 }
