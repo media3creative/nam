@@ -1,8 +1,8 @@
-.font-helvetica, .section p {
+.font-helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base, .section h4, .section p, .bottom h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -52,11 +52,11 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -201,11 +201,11 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .section p {
+.font-helvetica {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base, .section h4, .section p, .bottom h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -217,7 +217,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -255,11 +255,11 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -351,7 +351,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: relative;
   width: 100%;
   margin: 0 auto;
-  background: black;
+  background: white;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 .body .center {
   padding: 0 0 100px 0;
@@ -369,18 +371,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 30px 0 30px 0;
 }
 .section h1 {
-  font-family: "Embed-Helvetica";
-  margin: 0 0 10px 0;
+  margin: 0;
   padding: 0;
   line-height: 1.5em;
-  word-spacing: 0.1em;
-  letter-spacing: 0.05em;
+  text-align: left;
 }
 .section h4 {
-  font-family: "Embed-Helvetica";
   margin: 0 0 0 0;
   padding: 0;
-  line-height: 1.2em;
+  text-align: left;
 }
 .section p {
   margin: 10px 0;
@@ -394,7 +393,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin-bottom: 0;
 }
 .section:first-child {
-  background: url(/images/bg-line.jpg) bottom center no-repeat;
+  border-bottom: 1px solid #f7f7f7;
 }
 .section:last-child {
   padding-bottom: 0;
@@ -419,8 +418,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   overflow: hidden;
   margin: 0 0 30px 0;
   padding: 10px;
-  background: black;
-  border: 1px solid #614731;
+  background: #f7f7f7;
+  border: 1px solid #e1e3e3;
 }
 .image-container img {
   width: 360px;
@@ -429,59 +428,58 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .top h1 {
-  margin: 15px 0 0 0;
+  font-family: "EmbedFont-1";
+  margin: 30px 0 0 0;
   font-size: 24px;
-  color: #dddddd;
+  color: #000050;
 }
 .top h4 {
-  font-size: 19px;
-  color: #c5de9d;
+  font-size: 16px;
+  color: #990000;
+  text-transform: uppercase;
+  margin-top: -7px;
 }
 .top p {
   font-size: 15px;
   font-weight: 200;
-  color: #dddddd;
-  letter-spacing: 0.05em;
+  line-height: 1.3em;
+  color: #bebebe;
+  text-align: left;
 }
 .top a {
-  color: #dddddd;
-  border-bottom: 1px dotted #7c7c7c;
+  color: #990000;
 }
 .top a:hover {
-  color: #7c7c7c;
-  border-bottom: 1px solid transparent;
+  color: #cccccc;
 }
 
 .bottom h1 {
-  color: #7c7c7c;
+  color: #000050;
   font-size: 19px;
-  font-weight: bold;
 }
 .bottom h4 {
   margin: 0 0 -10px;
-  color: #614731;
+  color: #8c8c8c;
   font-size: 15px;
   font-weight: bolder;
   line-height: 1em;
 }
 .bottom p {
   padding: 0 30px 0 0;
-  color: #7c7c7c;
-  font-size: 15px;
+  color: #bebebe;
+  font-size: 14px;
   font-weight: 200;
   text-align: justify;
 }
-.bottom p a {
-  color: #5c5c5c;
+.bottom a {
+  color: #990000;
   text-decoration: none;
-  border-bottom: 1px dotted #333333;
 }
-.bottom p a:hover {
-  color: #c5de9d;
-  border-bottom: 1px solid transparent;
+.bottom a:hover {
+  color: #bebebe;
 }
 .bottom .left {
-  border-right: 1px solid #1e1c1c;
+  border-right: 1px solid #e1e3e3;
 }
 
 .spacer {

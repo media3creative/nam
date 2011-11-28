@@ -15,7 +15,9 @@
 	position: relative
 	width: 100%
 	margin: 0 auto
-	background: #000
+	background: #fff
+	border-top: 1px solid $gray-md
+	border-bottom: 1px solid $gray-md
 	.center
 		@extend .center-container
 		@extend .clearfix
@@ -35,21 +37,19 @@
 	padding: $v-gap 0 ($v-gap) 0
 	//border-bottom: 1px dotted $section-border
 	h1
-		font-family: "Embed-Helvetica"
 		@extend .box
-		margin: 0 0 ($v-gap/3) 0
+		margin: 0
 		padding: 0
 		line-height: 1.5em
-		word-spacing: .1em
-		letter-spacing: 0.05em
+		text-align: left
 	h4
-		font-family: "Embed-Helvetica"
+		@extend .font-base
 		@extend .box
 		margin: 0 0 0 0
 		padding: 0
-		line-height: 1.2em
+		text-align: left
 	p
-		@extend .font-helvetica
+		@extend .font-base
 		@extend .box
 		margin: ($v-gap/3) 0
 		padding: 0 0 0 $corner-radius
@@ -59,7 +59,8 @@
 		&:last-child
 			margin-bottom: 0
 	&:first-child
-		background: url(/images/bg-line.jpg) bottom center no-repeat
+		border-bottom: 1px solid #f7f7f7
+		//background: url(/images/bg-line.jpg) bottom center no-repeat
 	&:last-child
 		padding-bottom: 0
 		border-bottom: none
@@ -80,8 +81,8 @@
 	overflow: hidden
 	margin: 0 0 ($v-gap) 0
 	padding: 10px
-	background: #000
-	border: 1px solid $brown
+	background: #f7f7f7
+	border: 1px solid $gray-lt
 	img
 		width: 360px
 		height: 250px
@@ -89,51 +90,51 @@
 
 .top
 	h1
-		margin: ($v-gap/2) 0 0 0
+		font-family: "EmbedFont-1"
+		margin: ($v-gap) 0 0 0
 		font-size: 24px
-		color: #ddd
+		color: $navy
 	h4
-		font-size: 19px
-		color: $green
+		font-size: 16px
+		color: $red
+		text-transform: uppercase
+		margin-top: -7px
 	p
 		font-size: 15px
 		font-weight: 200
-		color: #ddd
-		letter-spacing: 0.05em
+		line-height: 1.3em
+		color: $gray-dk
+		text-align: left
 	a
-		color: #ddd
-		border-bottom: 1px dotted $gray-lt
+		color: $red
 		&:hover
-			color: $gray-lt
-			border-bottom: 1px solid transparent
+			color: $gray-md
 			
 
 .bottom
 	h1
-		color: $gray-lt
+		@extend .font-base
+		color: $navy
 		font-size: 19px
-		font-weight: bold
 	h4
 		margin: 0 0 (($v-gap/3)*-1)
-		color: $brown
+		color: $gray-dker
 		font-size: 15px
 		font-weight: bolder
 		line-height: 1em
 	p
 		padding: 0 30px 0 0
-		color: $gray-lt
-		font-size: 15px
+		color: $gray-dk
+		font-size: 14px
 		font-weight: 200
 		text-align: justify
-		a
-			color: #5c5c5c
-			text-decoration: none
-			border-bottom: 1px dotted $gray-md
-			&:hover
-				color: $green
-				border-bottom: 1px solid transparent
+	a
+		color: $red
+		text-decoration: none
+		&:hover
+			color: $gray-dk
 	.left
-		border-right: 1px solid $gray-dk
+		border-right: 1px solid $gray-lt
 
 
 

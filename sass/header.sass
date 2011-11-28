@@ -9,12 +9,14 @@
 @import partials/corners
 
 #header
-	@extend .box
 	width: 100%
 	height: $header-height
 	margin: 0
 	padding: 0
-	background: url(/images/bg-header.png) repeat-x
+	background: #f7f7f7
+	border-top: 1px solid $gray-md
+	border-bottom: 1px solid $gray-md
+	//background: url(/images/bg-header.png) repeat-x
 	.center
 		@extend .center-container
 		@extend .box
@@ -42,11 +44,11 @@
 			
 // NAVMENU
 ul#topnav
-	font-family: "Embed-Helvetica"
+	@extend .font-base
 	+float-right
-	margin: 25px 0 0 0
+	margin: 14px 0 0 0
 	padding: 0
-	color: $gray-lt
+	color: $gray-dker
 	font-size: 11px
 	letter-spacing: 0.05em
 	list-style: none
@@ -55,7 +57,7 @@ ul#topnav
 ul#topnav li 
 	position: relative
 	+float-left
-	margin: 0
+	margin: 0 0 0 1em
 	padding: 0
 
 ul#topnav li a 
@@ -64,14 +66,15 @@ ul#topnav li a
 
 ul#topnav a.topnav
 	@extend .box
-	margin: 6px -1px 0 0
-	padding: .5em 1.8em .4em 1.8em
+	margin: 4px -1px 0 0
+	padding: 5px 10px
 	font-size: 13px
 	text-align: center
 	text-transform: uppercase
+	border: 1px solid transparent
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover 
-	color: #fff
+	color: $navy
  
 ul#topnav li .sub 
 	@extend .corner-bottom
@@ -132,7 +135,6 @@ ul#topnav .sub ul li h2
 
 //Navigation Active Classes
 body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six
-	@extend .navigation-hover
-
-.navigation-hover
-	color: $green
+	color: $navy
+	border: 1px solid $gray-lt
+	

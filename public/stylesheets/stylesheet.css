@@ -42,7 +42,7 @@ table {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -54,7 +54,7 @@ table {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -92,11 +92,11 @@ table {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 a {
@@ -242,7 +242,7 @@ select, input, textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -254,7 +254,7 @@ select, input, textarea {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -292,11 +292,11 @@ select, input, textarea {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -445,7 +445,7 @@ b {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -457,7 +457,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -495,11 +495,11 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -1321,11 +1321,11 @@ p:last-child {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .omg-bar {
@@ -1427,7 +1427,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 html {
   margin: 0;
   padding: 0;
-  background: #1e1c1c;
+  background: #e1e3e3;
+  border-top: 10px solid #e1e3e3;
 }
 
 body {

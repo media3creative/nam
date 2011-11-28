@@ -2,7 +2,7 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base, ul#topnav {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -52,11 +52,11 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -170,7 +170,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: transparent;
 }
 
-.box, .center-container, #header .center, #header, #header .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
+.box, .center-container, #header .center, #header .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -205,7 +205,7 @@ b {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base, ul#topnav {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -217,7 +217,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -255,11 +255,11 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -352,7 +352,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 60px;
   margin: 0;
   padding: 0;
-  background: url(/images/bg-header.png) repeat-x;
+  background: #f7f7f7;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 #header .center {
   background: transparent;
@@ -378,12 +380,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 ul#topnav {
-  font-family: "Embed-Helvetica";
   display: inline;
   float: right;
-  margin: 25px 0 0 0;
+  margin: 14px 0 0 0;
   padding: 0;
-  color: #7c7c7c;
+  color: #8c8c8c;
   font-size: 11px;
   letter-spacing: 0.05em;
   list-style: none;
@@ -394,7 +395,7 @@ ul#topnav li {
   position: relative;
   display: inline;
   float: left;
-  margin: 0;
+  margin: 0 0 0 1em;
   padding: 0;
 }
 
@@ -405,15 +406,16 @@ ul#topnav li a {
 }
 
 ul#topnav a.topnav {
-  margin: 6px -1px 0 0;
-  padding: 0.5em 1.8em 0.4em 1.8em;
+  margin: 4px -1px 0 0;
+  padding: 5px 10px;
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;
+  border: 1px solid transparent;
 }
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover {
-  color: white;
+  color: #000050;
 }
 
 ul#topnav li .sub {
@@ -478,6 +480,7 @@ ul#topnav .sub ul li h2 {
   font-weight: bolder;
 }
 
-.navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
-  color: #c5de9d;
+body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
+  color: #000050;
+  border: 1px solid #e1e3e3;
 }

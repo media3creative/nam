@@ -2,7 +2,7 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -52,11 +52,11 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -205,7 +205,7 @@ b {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -217,7 +217,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -255,11 +255,11 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -370,7 +370,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 1px auto 0;
   padding: 0;
   background: transparent;
-  text-align: left;
 }
 #footer .center .content .row:last-child {
   border-right: none;
@@ -383,6 +382,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-weight: 200;
   word-spacing: 0.1em;
   letter-spacing: 0.05em;
+  text-align: left;
 }
 #footer .center .content .row a {
   display: inline;
@@ -393,7 +393,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   text-decoration: none;
 }
 #footer .center .content .row a:hover {
-  color: #c5de9d;
+  color: #000050;
 }
 #footer .center .content .row a img.icon {
   width: 15px;

@@ -2,7 +2,7 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base, .image-slider .center .captionContainer h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -52,11 +52,11 @@
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -205,7 +205,7 @@ b {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.font-arial {
+.font-arial, .font-base, .image-slider .center .captionContainer h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -217,7 +217,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -255,11 +255,11 @@ b {
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
-  background: #1e1c1c;
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -351,8 +351,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: relative;
   width: 100%;
   margin: 0 auto;
-  background: #333333;
-  border-bottom: 10px solid #1e1c1c;
+  background: #e1e3e3;
+  border-top: 10px solid #e1e3e3;
+  border-bottom: 10px solid #e1e3e3;
 }
 .image-slider .center {
   padding: 0;
@@ -377,11 +378,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: transparent;
 }
 .image-slider .center .captionContainer h1 {
-  font-family: "Embed-Helvetica";
+  font-family: "EmbedFont-1";
   margin: 0px;
   padding: 0;
-  color: #333333;
-  font-size: 39px;
+  color: #000050;
+  font-size: 33px;
   font-weight: 100;
   text-align: left;
   line-height: 1em;
@@ -393,8 +394,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: 0px;
   margin: 5px 50px 10px 0;
   padding: 0;
-  color: #7c7c7c;
-  font-size: 15px;
+  color: #bebebe;
+  font-size: 16px;
   font-weight: 200;
   text-align: left;
   line-height: 1.1em;
@@ -421,6 +422,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: relative;
   width: 1200px;
   height: 300px;
+  border: 1px solid #cccccc;
 }
 
 .nivoSlider img {

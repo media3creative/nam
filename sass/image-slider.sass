@@ -13,8 +13,9 @@
 	position: relative
 	width: 100%
 	margin: 0 auto
-	background: $gray-md
-	border-bottom: 10px solid $gray-dk
+	background: $gray-lt
+	border-top: 10px solid $gray-lt
+	border-bottom: 10px solid $gray-lt
 	.center
 		@extend .center-container
 		padding: 0
@@ -40,26 +41,26 @@
 			background: transparent
 			h1
 				@extend .box
-				font-family: "Embed-Helvetica"
+				font-family: "EmbedFont-1"
 				margin: 0px
 				padding: 0
-				color: $gray-md
+				color: $navy
 				//opacity: 0.85
-				font-size: 39px
+				font-size: 33px
 				font-weight: 100
 				text-align: left
 				line-height: 1em
 				word-spacing: .1em
 				letter-spacing: 0
 			h3
-				@extend .font-Helvetica
+				@extend .font-base
 				@extend .box
 				position: relative
 				top: 0px
 				margin: 5px 50px 10px 0
 				padding: 0
-				color: $gray-lt
-				font-size: 15px
+				color: $gray-dk
+				font-size: 16px
 				font-weight: 200
 				text-align: left
 				line-height: 1.1em
@@ -94,6 +95,7 @@
 	position: relative
 	width: $center-width
 	height: $slider-height
+	border: 1px solid $gray-md
 
 .nivoSlider img 
 	@extend .box
